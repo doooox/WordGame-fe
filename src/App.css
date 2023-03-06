@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("../public/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgba(5, 108, 112, 0.267);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.word-form-wrapper {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.word-form {
+  width: 30rem;
+  height: 20rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: rgba(80, 205, 203, 0.11);
+  background: radial-gradient(circle, rgba(80, 205, 202, 0.1066001400560224) 0%, rgba(148, 233, 233, 0.452) 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.word-form label {
+  font-size: 2rem;
+  margin-bottom:1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.word-form input {
+  width: 15rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.word-form button{
+  width: 7rem;
+  height: 2rem;
+  background-color: rgb(0, 174, 255);
+  border-radius: 1rem;
+  border: none;
+  transition: ease-in 0.3s;
+}
+
+.word-form button:hover{
+  cursor: pointer;
+    background-color: rgb(0, 140, 255);
+}
+
+.error-message {
+  margin: 1rem 0;
+  color: red;
+}
+
+.score {
+  margin: 1rem 0;
+  color: rgb(0, 255, 0);
+  padding: 1rem;
+  border-radius: 1rem;
 }
